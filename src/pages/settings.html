@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Settings Page</title>
+    <link rel="stylesheet" href="../styles/settings.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="first-section">
+        <div class="menu-bar">
+          <div class="menu-items">
+            <a href="../index.html"
+              ><img src="../images/arrow.png" alt="back button"
+            /></a>
+          </div>
+          <div class="window-settings">
+            <div class="window-minimize-button">
+              <img
+                src="../images/minus.png"
+                alt="window minimizing button"
+                class="window-navigation-img"
+              />
+            </div>
+            <div class="window-close-button">
+              <img
+                src="../images/close.png"
+                alt="window closing button"
+                class="window-navigation-img"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="title">
+          <h1>Settings</h1>
+        </div>
+      </div>
+      <div class="second-section">
+        <div class="select-audio">
+          <label for="audio-file">Select a custom notification sound:</label>
+          <input type="file" id="input-audio-file" name="audio-file" />
+        </div>
+        <div class="output-device">
+          <label for="device-list">Choose a audio output device:</label>
+          <select name="device-list" id="cars">
+            <option value="">----</option>
+            <option value="">---</option>
+            <!-- change these to availabe audio output devices, the selected device will be use for notification audio sound. -->
+          </select>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

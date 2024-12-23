@@ -11,14 +11,66 @@ h1 {
     font-family: 'Segoe UI';
 }
 
+body {
+    display: flex;
+    justify-content: center;
+}
+
 .container {
-    margin: 25px 0px 20px;
     display: flex;
     flex-direction: column;
     gap: 30px;
+    width: 460px;
 }
 
-.first-section {}
+.first-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.menu-bar {
+    padding: 10px 0px 0px 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.menu-items {
+    display: flex;
+    align-items: center;
+}
+
+.menu-items img {
+    width: 22px;
+    height: auto;
+}
+
+.menu-items a {
+    display: flex;
+    align-items: center;
+}
+
+.window-settings {
+    display: flex;
+    align-items: center;
+}
+
+.window-minimize-button {
+    padding: 0px 8px;
+}
+
+.window-close-button {
+    padding: 0px 8px;
+}
+
+.window-navigation-img {
+    width: 23px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
 
 .title {
     display: flex;
@@ -156,4 +208,3 @@ h1 {
     align-items: end;
     justify-content: center;
 }
-
