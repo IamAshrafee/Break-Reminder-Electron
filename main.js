@@ -9,7 +9,7 @@ require('electron-reload')(path.join(__dirname), {
 
 function createWindow() {
     const win = new BrowserWindow({
-        width: 500,
+        width: 480,
         height: 600,
         webPreferences: {
             nodeIntegration: true

@@ -1,12 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Break Reminder</title>
-    <link rel="stylesheet" href="./main.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="first-section">
+        <div class="title">
+          <img src="./images/only-clock.png" alt="title image" />
+          <h1>Break Reminder</h1>
+          <p>Set a timer to remind yourself to take a break</p>
+        </div>
+      </div>
+      <div class="second-section">
+        <div class="clock">
+          <div class="clock-container">
+            <p>00</p>
+            <span>:</span>
+            <p>00</p>
+          </div>
+        </div>
+      </div>
+      <div class="third-section">
+        <div class="input-time">
+          <input
+            min="0"
+            type="number"
+            id="start-time-input"
+            class="time-input"
+            placeholder="Time:  &nbsp;&nbsp;&nbsp;&nbsp; Minutes:"
+          />
+          <input
+            min="0"
+            type="number"
+            id="break-time-input"
+            class="time-input"
+            placeholder="Break: &nbsp;&nbsp;&nbsp;&nbsp; Minutes:"
+          />
+        </div>
+        <div class="navigation-buttons">
+          <!-- when user will click on the start timer button, it will automatically change into "Stop Timer" button and that's width will be 120px and the changing animation will be down to top with the trasform of 0.5s ease  -->
+          <button class="start-stop-button" id="startstop-button">
+            Start Timer
+          </button>
+        </div>
+        <div class="text">
+          <p id="status-text">Press "Start Timer" to begin</p>
+          <!-- after starting it will change -->
+        </div>
+      </div>
+    </div>
+
     <script src="./script.js"></script>
-</body>
+  </body>
 </html>
